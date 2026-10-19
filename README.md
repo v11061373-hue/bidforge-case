@@ -40,6 +40,21 @@
               RAG 知识库（10 类 166 份，ChromaDB）
 ```
 
+## 交互界面
+
+对话模式（Matrix 房间）—— Manager 理解意图、逐阶段调度 Worker，人类逐阶段确认：
+
+<div align="center">
+  <img src="docs/images/manager交互.png" alt="Manager 对话交互" width="90%">
+  <p><em>Manager 协调四 Worker 的对话房间</em></p>
+</div>
+
+Parse / Write / Check 三个 Worker 的独立房间：
+
+| Parse | Write | Check |
+|:-----:|:-----:|:-----:|
+| <img src="docs/images/parse.png" alt="Parse Agent 房间" width="100%"> | <img src="docs/images/write.png" alt="Write Agent 房间" width="100%"> | <img src="docs/images/check.png" alt="Check Agent 房间" width="100%"> |
+
 ## 技术栈
 
 | 层 | 选型 |
